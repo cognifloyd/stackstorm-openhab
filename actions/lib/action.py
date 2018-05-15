@@ -47,5 +47,5 @@ class BaseAction(Action):
         req.raise_for_status()
         try:
             return req.json()
-        except:
+        except Exception:
             return req.text
